@@ -31,31 +31,38 @@
       </button>
       <button id="generate" class="btn">Generate Password</button>
     </div>
-        <div class="settings">
-          <div class="setting">
-            <label>Password length</label>
-            <input type="number" id="long" min="8" max="128" value="10" />
-          
-          </div>
-          <div class="setting">
-            <label>Include uppercase letters</label>
-            <input type="checkbox" id="upper" checked />
-          </div>
-          <div class="setting">
-            <label>Include lowercase letters</label>
-            <input type="checkbox" id="lower" checked />
-          </div>
-          <div class="setting">
-            <label>Include numbers</label>
-            <input type="checkbox" id="num" checked />
-          </div>
-          <div class="setting">
-            <label>Include symbols</label>
-            <input type="checkbox" id="symbol" checked />
-          </div>
+    <div class="settings">
+      <div class="toggles">
+        <div class="setting">
+          <label>Password length</label>
+          <input type="number" id="long" min="8" max="128" value="10" />
+        </div>
+        <div class="setting">
+          <label>Include uppercase letters</label>
+          <input type="checkbox" id="upper" checked />
+        </div>
+        <div class="setting">
+          <label>Include lowercase letters</label>
+          <input type="checkbox" id="lower" checked />
+        </div>
+        <div class="setting">
+          <label>Include numbers</label>
+          <input type="checkbox" id="num" checked />
+        </div>
+        <div class="setting">
+          <label>Include symbols</label>
+          <input type="checkbox" id="symbol" checked />
         </div>
       </div>
-      <div class="card-footer">
+      <div class="stored_passwords">
+        <button class="btnStore" id="store">Store Password</button>
+        <h4>Stored Passwords</h4>
+        <ul id="stored"></ul>
+      </div>
+
+    </div>
+  </div>
+  <div class="card-footer">
   </div>
 
 

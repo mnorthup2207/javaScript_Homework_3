@@ -7,6 +7,11 @@ var symbolEl = document.getElementById("symbol");
 var numberEl = document.getElementById("num");
 const clipboard = document.getElementById('clipboard');
 var lengthEl = document.getElementById("long")
+var submitToStore = document.getElementById("store")
+var passList = document.getElementById("stored")
+
+var passwordBank = []
+
 
 var randomFunc = {
 	lower: getRandomLower,
@@ -14,6 +19,27 @@ var randomFunc = {
 	number: getRandomNumber,
 	symbol: getRandomSymbol
 }
+
+function renderBank() {
+	for (var i = 0; i < passwordBank.length; i++) {
+		var input = passwordBank[i];
+	
+		var li = document.createElement("li");
+		li.textContent = input;
+		passList.appendChild(li);
+	  }
+};
+
+submitToStore.addEventListener("click", function(event) {
+	event.preventDefault();
+
+	var input = resultEl.innerText;
+	passwordBank.push(input);
+	renderBank();
+
+
+})
+
 
 clipboard.addEventListener('click', () => {
 	var textarea = document.createElement('textarea');

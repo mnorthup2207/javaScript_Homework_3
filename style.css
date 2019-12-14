@@ -37,6 +37,15 @@ h2{
     margin: 0% 0% 2% 5%;
     width: 45%;
 }
+.btnStore{
+    box-sizing: border-box;
+    background-color: red;
+    border: red solid 1px;
+    
+    padding: 2%;
+    margin: -2% 0% -3% 0%;
+    width: 45%;
+}
 
 #password{
     width: 100%;
@@ -49,4 +58,17 @@ h2{
 .setting{
     margin-left: 20%;
     margin-bottom: 5%;
+    
+}
+
+.toggles{
+    float: left;
+    width: 40%;
+    margin-left: 15%;
+}
+
+.stored_passwords{
+    width: 40%;
+    margin-left: 30%;
+    padding-left: 34%;
 }
