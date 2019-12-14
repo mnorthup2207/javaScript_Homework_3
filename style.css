@@ -1,0 +1,52 @@
+body{
+    margin: 0 auto;
+    background: black;
+    color: whitesmoke;
+}
+.wrapper{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10%;
+    box-sizing: border-box;
+}
+
+h1{
+    color: grey;
+    text-align: center;
+}
+
+h2{
+    color: grey;
+}
+
+.btn{
+    box-sizing: border-box;
+    background-color: red;
+    border: red solid 1px;
+    
+    padding: 2%;
+    margin: 0% 0% 2% 0%;
+    width: 45%;
+}
+.clipBtn{
+    box-sizing: border-box;
+    background-color: red;
+    border: red solid 1px;
+    
+    padding: 2%;
+    margin: 0% 0% 2% 5%;
+    width: 45%;
+}
+
+#password{
+    width: 100%;
+    padding-bottom: 25%;
+    box-sizing: border-box;
+    border: grey dashed 3px;
+    margin-bottom: 5%;
+}
+
+.setting{
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
