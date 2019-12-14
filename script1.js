@@ -21,7 +21,7 @@ clipboard.addEventListener('click', () => {
 	
 	if(!password) { return; }
 	
-	textarea.value = password;
+	textarea.value = passwowhiterd;
 	document.body.appendChild(textarea);
 	textarea.select();
 	document.execCommand('copy');
@@ -35,7 +35,11 @@ generate.addEventListener('click', () => {
 	var hasUpper = upperEl.checked;
 	var hasNumber = numberEl.checked;
 	var hasSymbol = symbolEl.checked;
-	
+	var redAlert1 = document.querySelectorAll("label");
+	redAlert1[1].setAttribute("style", "color: white;")
+	redAlert1[2].setAttribute("style", "color: white;")
+	redAlert1[3].setAttribute("style", "color: white;")
+	redAlert1[4].setAttribute("style", "color: white;")
 	resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length);
 });
 
@@ -46,6 +50,14 @@ function generatePassword(lower, upper, number, symbol, length) {
 	
 	// Doesn't have a selected type
 	if(typesCount === 0) {
+		var redAlert1 = document.querySelectorAll("label");
+		redAlert1[1].setAttribute("style", "color: red;")
+		redAlert1[2].setAttribute("style", "color: red;")
+		redAlert1[3].setAttribute("style", "color: red;")
+		redAlert1[4].setAttribute("style", "color: red;")
+		
+		
+		alert("Please select at least one variable");
 		return '';
 	}
 	
