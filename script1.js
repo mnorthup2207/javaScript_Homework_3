@@ -5,7 +5,7 @@ var upperEl = document.getElementById("upper");
 var lowerEl = document.getElementById("lower");
 var symbolEl = document.getElementById("symbol");
 var numberEl = document.getElementById("num");
-var clippyEl = document.getElementById("clipboard");
+const clipboard = document.getElementById('clipboard');
 var lengthEl = document.getElementById("long")
 
 var randomFunc = {
@@ -15,9 +15,9 @@ var randomFunc = {
 	symbol: getRandomSymbol
 }
 
-clippyEl.addEventListener('click', () => {
+clipboard.addEventListener('click', () => {
 	var textarea = document.createElement('textarea');
-	var password = resultEl.innerText;
+	var password = resultEl.innerHTML;
 	
 	if(!password) { return; }
 	
