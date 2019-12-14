@@ -61,20 +61,27 @@ function generatePassword(lower, upper, number, symbol, length) {
 	
 	return finalPassword;
 }
-
+// Rand Functions
 function getRandomLower() {
-	return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
-}
-
-function getRandomUpper() {
-	return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
-}
-
-function getRandomNumber() {
-	return +String.fromCharCode(Math.floor(Math.random() * 10) + 48);
-}
-
-function getRandomSymbol() {
-	var symbols = '!@#$%^&*(){}[]=<>/,.'
-	return symbols[Math.floor(Math.random() * symbols.length)];
-}
+	var lowerCase = "abcdefghijklmnopqrstuvwxyz";
+	return lowerCase[Math.floor(Math.random() * lowerCase.length)];
+  }
+  // console.log(getRandomLowerCase())
+  // upper case
+  function getRandomUpper() {
+	const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	return upperCase[Math.floor(Math.random() * upperCase.length)];
+  }
+  // console.log(getRandomUpperCase())
+  // lower case
+  function getRandomSymbol() {
+	const symbolCase = "!@#$%&*()_-+=";
+	return symbolCase[Math.floor(Math.random() * symbolCase.length)];
+  }
+  // console.log(getRandomSymbol())
+  // rand num
+  function getRandomNumber() {
+	return [Math.floor(Math.random() * 10)];
+  }
+  // console.log(getRandomNumber())
+  
